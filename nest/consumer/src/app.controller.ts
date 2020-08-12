@@ -10,6 +10,10 @@ export class AppController {
     @Payload() data: string, 
     @Ctx() context: RmqContext
   ) {
+    const channel = context.getChannelRef();
+    const originalMsg = context.getMessage();
+    channel.ack(originalMsg);
+    
     return data + ' World'
   }
 }
