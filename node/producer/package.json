@@ -1,0 +1,17 @@
+{
+  "name": "docker-rabbitmq-node",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "homepage": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --watch"
+  },
+  "dependencies": {
+    "amqplib": "0.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.17.3"
+  }
+}
